@@ -1,0 +1,89 @@
+=infer_type
+{
+  {
+    {
+      {
+        "bname",
+        tag = "TLiteral"
+      },
+      {
+        "string",
+        tag = "TBase"
+      },
+      tag = "TField"
+    },
+    {
+      {
+        "new",
+        tag = "TLiteral"
+      },
+      {
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TValue"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TNil"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        tag = "TFunction"
+      },
+      const = false,
+      tag = "TField"
+    },
+    {
+      {
+        "bfoo",
+        tag = "TLiteral"
+      },
+      {
+        {
+          nil,
+          {
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TNil"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        tag = "TFunction"
+      },
+      const = false,
+      tag = "TField"
+    },
+    tag = "TTable"
+  },
+  {
+    {
+      tag = "TNil"
+    },
+    tag = "TVararg"
+  },
+  tag = "TTuple"
+}

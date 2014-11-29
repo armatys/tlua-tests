@@ -1,0 +1,98 @@
+=decl_type
+{
+  {
+    {
+      {
+        "aname",
+        tag = "TLiteral"
+      },
+      {
+        "string",
+        tag = "TBase"
+      },
+      tag = "TField"
+    },
+    {
+      {
+        "new",
+        tag = "TLiteral"
+      },
+      {
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TValue"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TNil"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        tag = "TFunction"
+      },
+      const = false,
+      tag = "TField"
+    },
+    {
+      {
+        "afoo",
+        tag = "TLiteral"
+      },
+      {
+        {
+          nil,
+          {
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        {
+          {
+            tag = "TSelf"
+          },
+          {
+            {
+              tag = "TNil"
+            },
+            tag = "TVararg"
+          },
+          tag = "TTuple"
+        },
+        tag = "TFunction"
+      },
+      const = false,
+      tag = "TField"
+    },
+    {
+      {
+        "bname",
+        tag = "TLiteral"
+      },
+      {
+        "string",
+        tag = "TBase"
+      },
+      tag = "TField"
+    },
+    open = true,
+    tag = "TTable"
+  },
+  {
+    tag = "TVararg"
+  },
+  tag = "TTuple"
+}
