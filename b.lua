@@ -1,14 +1,17 @@
+local A = require("A")
 
 local B = {}
-B["bname"] = "<class B proto>"
 B["new"] = function (self)
   local o = setmetatable({},{["__index"] = self})
-  o["bname"] = "<class B>"
   return o
 end
+B["bbar"] = function (self)
+  print("bbar called")
+  return self
+end
 B["bfoo"] = function (self)
-  local s = self["bname"]
-  print("Hello " .. s)
+  local a = A:new()
+  self:bbar()
   return self
 end
 return B

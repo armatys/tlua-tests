@@ -1,21 +1,27 @@
+local A = require 'A'
+
 interface B
-  bname: string
-  new:(self) -> (self)
-  bfoo:(self) -> (self)
+  const new:() => (self)
+  const bfoo:() => (self)
+  const bbar:() => (self)
 end
 
 local B = {}
-B.bname = '<class B proto>'
 
-function B:new(): self
+const function B:new(): self
   local o = setmetatable({}, { __index = self })
-  o.bname = '<class B>'
   return o
 end
 
-function B:bfoo(): self
-  local s: string = self.bname
-  print('Hello ' .. s)
+const function B:bbar(): self
+  print('bbar called')
+  return self
+end
+
+const function B:bfoo(): self
+  local a: A = A:new()
+  self:bbar()
+  -- Calling `local a: A = A:new()` here would be OK
   return self
 end
 
