@@ -21,7 +21,7 @@ end
 const function B:bfoo(): self
   local a: A = A:new()
   self:bbar()
-  -- Calling `local a: A = A:new()` here would be OK
+  --local a: A = A:new() -- calling it here would be OK
   return self
 end
 
