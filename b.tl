@@ -2,7 +2,7 @@ local A = require 'A'
 
 interface B
   const new:() => (self)
-  const bfoo:() => (self)
+  const bfoo:(A) => (self)
   const bbar:() => (self)
 end
 
@@ -18,10 +18,9 @@ const function B:bbar(): self
   return self
 end
 
-const function B:bfoo(): self
-  local a: A = A:new()
-  self:bbar()
-  --local a: A = A:new() -- calling it here would be OK
+const function B:bfoo(a: A): self
+  a.afoo(a) -- This works
+  a:afoo() -- but this not
   return self
 end
 

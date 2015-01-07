@@ -9,9 +9,9 @@ B["bbar"] = function (self)
   print("bbar called")
   return self
 end
-B["bfoo"] = function (self)
-  local a = A:new()
-  self:bbar()
+B["bfoo"] = function (self, a)
+  a["afoo"](a)
+  a:afoo()
   return self
 end
 return B

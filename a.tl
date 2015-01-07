@@ -1,7 +1,7 @@
 interface A
   aname: string
-  new:(self) -> (self)
-  afoo:(self) -> (self)
+  new:() => (self)
+  afoo:() => (self)
 end
 
 local A = {}

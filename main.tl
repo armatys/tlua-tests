@@ -4,5 +4,5 @@ local B = require 'B'
 local a: A = A:new()
 a:afoo()
 
-local b: B = B.new(B)
-b:bfoo()
+local b: B = B:new()
+b:bfoo(a)
