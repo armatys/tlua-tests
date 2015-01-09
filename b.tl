@@ -19,8 +19,8 @@ const function B:bbar(): self
 end
 
 const function B:bfoo(a: A): self
-  a.afoo(a) -- This works
-  a:afoo() -- but this not
+  a.afoo(a)
+  a:afoo()
   return self
 end
 
